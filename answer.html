@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EIRÉ Candle</title>
+    <link rel="stylesheet" href="answer.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+
+</head>
+<body>
+    <!--header-->
+    <nav class="navbar navbar-expand-lg navbar-light header "
+    style="justify-content: space-between;background-color: #FFF5F3;position: fixed; top: 0; left: 0; right: 0; z-index: 1000;">
+
+    <div class="collapse navbar-collapse" style="flex-grow: 0">
+        <ul class="navbar-nav ">
+        <li class="nav-item mx-4">
+            <a class="nav-link" href="/product/product_nen_thom.html"
+            style="font-weight: 800; font-size: 18px; color: black;">SẢN PHẨM</span></a>
+        </li>
+        <li class="nav-item mx-4">
+            <a class="nav-link" href="About1.html" style="font-weight: 800; font-size: 18px; color: black;">VỀ CHÚNG TÔI</a>
+        </li>
+        <li class="nav-item mx-4">
+            <a class="nav-link" href="answer.html" style="font-weight: 800; font-size: 18px; color: black;">HỎI ĐÁP</a>
+        </li>
+        </ul>
+    </div>
+    <div class="collapse navbar-collapse mr-auto" style="flex-grow: 0"></div>
+    <a href="/home.html" class="navbar-logo" style="flex-grow: 1; text-align: center;">
+        <img src="images/Untitled-1.gif" alt="Logo" style="width: 110px; height: 110px;">
+    </a>
+    </div>
+    <div class="collapse navbar-collapse" style="flex-grow: 0">
+        <ul class="navbar-nav " style="margin: 0;">
+        <li class="nav-item mx-4">
+            <a class="nav-link" href="new.html" style="font-weight: 800; font-size: 18px; color: black;">TIN TỨC</a>
+        </li>
+        <li class="nav-item mx-4">
+            <input
+            style="width: 249px; height: 41px; margin-top: 45px; border-radius: 20px; opacity: 80%; padding-left: 35px;">
+            <i class="fa-solid fa-magnifying-glass" style="position: relative; left: -240px;"></i>
+        </li>
+        <li class="nav-item mx-4">
+            <a id="cart" href="#"><i class="fa-solid fa-cart-shopping "
+                style="font-size: 33px; padding-top: 50px; padding-right: 20px;"></i></a>
+            <a id="user" href="#"><i class="fa-solid fa-user"
+                style="font-size: 33px; padding-top: 50px;"></i></a>
+        </li>
+        </ul>
+
+    </div>
+    </nav>
+
+    <!-- Về Giao Hàng -->
+    <div class="section" style="margin-top: 200px;">
+        <div class="nav">
+            <div class="nav ul">
+                <li>VỀ GIAO HÀNG</li>
+            </div>
+        </div>
+        <a>
+            <div class="faq-category2">
+                <div class="faq-item">
+                    <div class="faq-item1">
+                        <button class="faq-question">
+                            <h2>Tôi có thể chọn giờ giao hàng không?</h2>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256">
+                                <path fill="currentColor" d="m216.49 104.49l-80 80a12 12 0 0 1-17 0l-80-80a12 12 0 0 1 17-17L128 159l71.51-71.52a12 12 0 0 1 17 17Z"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Bạn có thể chọn một trong các khung giờ sau: từ 11h30-13h, 13h-15h, 15h-17h hoặc 18h-20h.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item1">
+                        <button class="faq-question">
+                            <h2>Phí giao hàng của EIRÉ được tính như thế nào?</h2>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256">
+                                <path fill="currentColor" d="m216.49 104.49l-80 80a12 12 0 0 1-17 0l-80-80a12 12 0 0 1 17-17L128 159l71.51-71.52a12 12 0 0 1 17 17Z"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Phí giao hàng được tính dựa trên khoảng cách và giá trị đơn hàng.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item1">
+                        <button class="faq-question">
+                            <h2>Tôi sẽ nhận được nến đúng khung giờ tôi chọn chứ?</h2>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256">
+                                <path fill="currentColor" d="m216.49 104.49l-80 80a12 12 0 0 1-17 0l-80-80a12 12 0 0 1 17-17L128 159l71.51-71.52a12 12 0 0 1 17 17Z"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Chúng tôi luôn cố gắng hết sức để đảm bảo nến được giao tới tay bạn trong khung giờ bạn chọn. Tuy nhiên sẽ có thể xảy ra những sự cố ngoài ý muốn do giao thông, 
+                            thời tiết… dẫn đến việc giao hàng bị chậm trễ một chút. Nếu shipper không tới đúng hẹn, vui lòng liên hệ hotline để chúng tôi hỗ trợ bạn ngay lập tức.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item1">
+                        <button class="faq-question">
+                            <h2>Tôi có thể thay đổi khung thời gian/ địa chỉ giao hàng sau khi đã đặt không?</h2>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256">
+                                <path fill="currentColor" d="m216.49 104.49l-80 80a12 12 0 0 1-17 0l-80-80a12 12 0 0 1 17-17L128 159l71.51-71.52a12 12 0 0 1 17 17Z"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Để thay đổi thông tin giao hàng, vui lòng liên hệ với chúng tôi trước ít nhất 24h để chúng tôi có thể sắp xếp lại tuyến đường giao hàng cho bạn. Nếu bạn liên hệ quá gấp, chúng tôi sẽ không thể thay đổi điều này.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <hr>
+    <!-- Về Đặt Hàng -->
+    <div class="section">
+        <div class="nav">
+            <div class="nav ul">
+                <li>VỀ ĐẶT HÀNG</li>
+            </div>
+        </div>
+        <div class="article" style="margin-right: 170px; ">
+            <div class="faq-category2">
+                <div class="faq-item">
+                    <div class="faq-item1">
+                        <button class="faq-question">
+                            <h2>Ngoài website thì tôi có thể đặt hàng bằng cách khác không?</h2>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256">
+                                <path fill="currentColor" d="m216.49 104.49l-80 80a12 12 0 0 1-17 0l-80-80a12 12 0 0 1 17-17L128 159l71.51-71.52a12 12 0 0 1 17 17Z"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Bạn có thể đặt bánh qua các hình thức sau: Fanpage, Instagram, Hotline, Zalo: 090 786 0330</p>
+                        </div>
+                    </div>
+                    <div class="faq-item1">
+                        <button class="faq-question">
+                            <h2>EIRÉ có các hình thức thanh toán nào?</h2>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256">
+                                <path fill="currentColor" d="m216.49 104.49l-80 80a12 12 0 0 1-17 0l-80-80a12 12 0 0 1 17-17L128 159l71.51-71.52a12 12 0 0 1 17 17Z"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Hiện tại đối với cách đặt hàng qua website, chỉ có hình thức thanh toán duy nhất là chuyển khoản 100% giá trị đơn hàng ngay khi đặt hàng.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item1">
+                        <button class="faq-question">
+                            <h2>Tôi có thể huỷ đơn hàng sau khi đã thanh toán tiền nến không?</h2>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256">
+                                <path fill="currentColor" d="m216.49 104.49l-80 80a12 12 0 0 1-17 0l-80-80a12 12 0 0 1 17-17L128 159l71.51-71.52a12 12 0 0 1 17 17Z"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Nếu bạn muốn huỷ đơn hàng, vui lòng liên hệ trước với chúng tôi ít nhất 24h. Tiền nến sẽ được chúng tôi bảo lưu lại và trừ vào lần đặt hàng tiếp theo của bạn. Nếu bạn liên hệ với 
+                            chúng tôi muộn hơn 24h, lúc này đơn hàng của bạn đã được sản xuất vì vậy rất tiếc chúng tôi sẽ không thể hỗ trợ bạn huỷ đơn hàng.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item1">
+                        <button class="faq-question">
+                            <h2>Tôi có thể đến xem trực tiếp tại xưởng của EIRÉ không?</h2>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256">
+                                <path fill="currentColor" d="m216.49 104.49l-80 80a12 12 0 0 1-17 0l-80-80a12 12 0 0 1 17-17L128 159l71.51-71.52a12 12 0 0 1 17 17Z"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Bạn có thể xem trực tiếp tại các địa chỉ hiện có.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>      
+        </div>
+    </div>
+    <hr>
+    <!-- Về Sản Phẩm -->
+    <div class="section">
+        <div class="nav">
+            <div class="nav ul">
+                <li>VỀ SẢN PHẨM</li>
+            </div>
+        </div>
+        <div class="article" style="margin-right: 200px;">
+            <div class="faq-category2">
+                <div class="faq-item">
+                    <div class="faq-item1">
+                        <button class="faq-question">
+                            <h2>Cách bảo quản nến thế nào? Thời hạn sử dụng là bao lâu?</h2>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256">
+                                <path fill="currentColor" d="m216.49 104.49l-80 80a12 12 0 0 1-17 0l-80-80a12 12 0 0 1 17-17L128 159l71.51-71.52a12 12 0 0 1 17 17Z"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Tất cả đều được sử dụng bằng các nguyên liệu từ thiên nhiên nên có thể bảo quản ở nhiệt độ thường.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item1">
+                        <button class="faq-question">
+                            <h2>Tôi có thể đặt nến theo mẫu riêng mà tôi muốn được không?</h2>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256">
+                                <path fill="currentColor" d="m216.49 104.49l-80 80a12 12 0 0 1-17 0l-80-80a12 12 0 0 1 17-17L128 159l71.51-71.52a12 12 0 0 1 17 17Z"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Rất tiếc, chúng tôi chỉ sản xuất các mẫu có sẵn và không nhận đặt theo mẫu riêng.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item1">
+                        <button class="faq-question">
+                            <h2>Có mẫu dùng thử của sản phẩm hay không?</h2>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256">
+                                <path fill="currentColor" d="m216.49 104.49l-80 80a12 12 0 0 1-17 0l-80-80a12 12 0 0 1 17-17L128 159l71.51-71.52a12 12 0 0 1 17 17Z"></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Hiện tại bên phía cửa hàng chưa có mẫu dùng thử.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>         
+        </div>
+    </div>
+    <hr>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling; // Câu trả lời
+                const svgIcon = button.querySelector('svg'); // Mũi tên SVG
+
+                // Đóng các câu trả lời đang mở khác
+                document.querySelectorAll('.faq-answer').forEach(item => {
+                    if (item !== answer) {
+                        item.style.display = 'none'; // Ẩn các câu trả lời khác
+                        item.previousElementSibling.classList.remove('active');
+                        item.previousElementSibling.querySelector('svg').style.transform = 'rotate(0deg)'; // Đặt mũi tên xuống
+                    }
+                });
+
+                // Toggle trạng thái hiển thị câu trả lời được chọn
+                const isVisible = answer.style.display === 'block'; // Kiểm tra câu trả lời có đang hiển thị không
+                answer.style.display = isVisible ? 'none' : 'block'; // Hiển thị/ẩn câu trả lời
+
+                // Thay đổi mũi tên
+                if (isVisible) {
+                    svgIcon.style.transform = 'rotate(0deg)'; // Mũi tên xuống
+                } else {
+                    svgIcon.style.transform = 'rotate(180deg)'; // Mũi tên lên
+                }
+
+                // Thêm hoặc loại bỏ lớp active cho câu hỏi
+                button.classList.toggle('active', !isVisible);
+            });
+        });
+    </script>
+    <div class="contact">
+        <div class="contact-form">
+            <form style="width: 1300px; height: 400px;">
+                <div class="form-header-row">
+                    <h2>Gửi thắc mắc cho chúng tôi</h2>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Tên</label>
+                            <input type="text" id="name" name="name" placeholder="Nhập tên của bạn">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Nhập email của bạn">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group full-width" style="max-width: 975px; float: right; margin-left: 100px">
+                    <label for="message">Nội dung</label>
+                    <textarea id="message" name="message" rows="1" placeholder="Nhập nội dung thắc mắc"></textarea>
+                    <textarea></textarea>
+                    <textarea></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Gửi chúng tôi</button>
+            </form>
+        </div>
+    </div>
+        <!-- footer -->
+    <footer>
+        <div class="container-fluid">
+        <div class="content">
+            <div class="inner-left">
+            <p>Đăng ký nhận tin</p>
+            <input type="text" placeholder="Nhập email của bạn">
+            <button>ĐĂNG KÝ</button>
+            </div>
+
+            <div class="inner-right">
+            <p>Kết nối với chúng tôi</p>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="inner-content">
+            <p>Hộ kinh doanh EIRÉ Candle</p>
+            <div class="text">
+                <p>Số GPKD: 54.A.8020435 Ngày cấp: 04/04/2022 MST: 8748869380-002 Nơi cấp: Cục thuế Tỉnh Thái Bình Người đại
+                diện: Ông Phạm Hồng Thái</p>
+                <p class="address"> 122 Hoàng Quốc Việt, P.Nghĩa Tân, Q.Cầu Giấy, Hà Nội.
+                0123456789
+                eirescandle@gmail.com</p>
+            </div>
+            <img src="images/logo bo cong thuong.png" alt="">
+            </div>
+
+            <div class="inner-content">
+            <p>Chính sách</p>
+            <ul>
+                <li><a href="#">Chính sách đối trả</a></li>
+                <li><a href="#">Điều khoản dịch vụ</a></li>
+                <li><a href="#">Chính sách bảo mật</a></li>
+                <li><a href="#">Chính sách thanh toán</a></li>
+                <li><a href="#">Chính sách giao hàng</a></li>
+            </ul>
+
+            </div>
+
+            <div class="inner-content">
+            <p>Hỗ trơ khách hàng</p>
+            <ul>
+                <li><a href="#">Tìm kiếm</a></li>
+                <li><a href="#">Sản phẩm</a></li>
+
+            </ul>
+
+            </div>
+
+
+            <div class="inner-content">
+            <p>Đăng ký nhận tin</p>
+            <ul>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.2922764199134!2d105.78483620685098!3d20.980917989347034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135accdd8a1ad71%3A0xa2f9b16036648187!2zSOG7jWMgdmnhu4duIEPDtG5nIG5naOG7hyBCxrB1IGNow61uaCB2aeG7hW4gdGjDtG5n!5e0!3m2!1svi!2s!4v1732079365027!5m2!1svi!2s"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+
+
+        </div>
+
+        <div class="eire">
+            <div class="logo1">Crafted to be shared</div>
+            <div class="logo2">EIRÉ</div>
+        </div>
+        </div>
+    </footer>
+  <!-- end footer -->
+     <script src="bootstrap/jquery.slim.min.js"></script>
+     <script src="bootstrap/bootstrap.bundle.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+ </body>
+ </html>
+

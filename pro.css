@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Petrona:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #fff5ef, #ffe2dd);
+    background-size: contain;
+    overflow-x: hidden;
+}
+
+/* header */
+.section-one {
+    background-color: var(--color-one);
+    height: 119px;
+}
+
+.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.header a {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 119px;
+}
+#cart, #user{
+    color: #656362;
+}
+.header a:hover {
+    background-color: #fff;
+}
+#cart:hover, #user:hover{
+    color: var(--color-three);
+    background-color: transparent;
+
+}
+.header .navbar-logo:hover {
+    background-color: transparent;
+}
+
+/*phan1*/
+.product-page {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Hai cột: Hình ảnh và thông tin */
+}
+
+/* Phần trái: Hình ảnh */
+.product-images {
+    width: 100%; /* Đặt khung chứa hình ảnh */
+    max-width: 700px; /* Đặt chiều rộng tối đa cho khung */
+    height: 1000px; /* Chiều cao khung (hiển thị 1 hình) */
+    overflow-y: scroll; /* Cho phép cuộn dọc */
+    overflow-x: hidden; /* Không cuộn ngang */
+    margin-top: 150px;
+}
+.product-images::-webkit-scrollbar {
+    display: none; /* Ẩn thanh cuộn trên trình duyệt hỗ trợ Webkit (Chrome, Edge, Safari) */
+}
+.image-scrollable {
+    display: flex;
+    flex-direction: column; /* Sắp xếp hình ảnh theo cột */
+}
+
+.image-scrollable img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover; /* Hình ảnh giữ tỉ lệ và bao phủ toàn khung */
+}
+
+/* Phần phải: Chi tiết sản phẩm */
+.product-details {
+    text-align: left;
+    margin-top: 200px;
+}
+
+.product-title {
+    font-family: 'Alegreya', serif;
+}
+
+.product-price {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 10px 0;
+}
+
+.product-price span {  /*Text*/
+    font-family: 'Alegreya', serif;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.product-price button {
+    background: #ffffff;
+    border: none;
+    padding: 5px 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.product-price add-to-cart {/*Thêm giỏ*/
+    background: #b93131;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Alegreya', serif;
+    font-size: 26px;
+    font-weight: 400;
+    cursor: pointer;
+    margin: 10px 0;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.product-price add-to-cart:hover {
+    background: #ffffff;
+    color: #b93131;
+}
+
+.product-description {
+    font-family: 'Bellota Text', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+    margin: 20px 0;
+    max-width: 600px;
+}
+
+.product-info1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+.product-info h3 {
+    font-family: 'Alegreya', serif;
+    font-size: 26px;
+    font-weight: 700;
+    margin: 15px 0;
+}
+.product-info p {
+    font-family: 'Bellota Text', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.product-info list{
+    display: flex;
+    font-family: 'Bellota Text', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    justify-content: space-between;
+}
+.left-text {
+    text-align: left;
+}
+.right-text {
+    text-align: right;
+}
+
+/*phanHD&LY*/
+.instructions-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 40px;
+    border-top: 1px solid #000; /* Đường kẻ trên */
+    border-bottom: 1px solid #000; /* Đường kẻ dưới */
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+  
+.instruction-box {
+    width: 45%; /* Chiếm 45% chiều rộng container */
+    text-align: left;
+}
+  
+.instruction-box h3 {
+    font-family: 'Bellota Text', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+  
+.instruction-box ul {
+    list-style-type: disc;
+    padding-left: 20px; /* Khoảng cách giữa dấu và nội dung */
+    line-height: 1.8; 
+    font-family: 'Bellota Text', sserif;
+    font-size: 16px;
+    font-weight: 400;
+}
+  
+.instruction-box ul li {
+    margin-bottom: 5px; /* Khoảng cách giữa các dòng */
+}
+  
+/* Đường kẻ dọc */
+.divider {
+    width: 1px;
+    background-color: #000; 
+    height: 180px; 
+    margin: 20px;
+}
+
+/*phanGoiY*/
+.section-layout {
+    padding: 50px 80px 80px;
+    text-align: left;
+}
+
+.section-title {
+    font-family: 'Bellota Text', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+.suggest-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+.grid-item {
+    position: relative;
+    text-align: left;
+    cursor: pointer;
+}
+.grid-item img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.content {
+    text-align: left;
+    position: absolute;
+    max-width: 200px;
+    top: 5%;
+    left: 5%;
+}
+.content h1 {
+    font-family: 'Alegreya', serif;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+    position: relative;
+    top: 5%
+}
+.content p {
+    font-family: 'Bellota Text', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    margin-left: 5px;
+}
+.contents .detail-link { 
+    text-align: left; 
+    position: absolute; 
+    bottom: 10%; 
+    right: 10%; 
+    font-family: 'Bellota Text', sans-serif; 
+    font-size: 20px; 
+    font-weight: 700; 
+    cursor: pointer; 
+    text-decoration: none; 
+    color: inherit; /* Giữ nguyên màu chữ */ 
+    transition: all 0.3s ease; 
+} 
+.contents .detail-link .arrow { 
+    display: none; /* Ẩn mũi tên ban đầu */ 
+    margin-left: 10px; /* Khoảng cách bên trái mũi tên */ 
+} 
+.contents .detail-link:hover .arrow { 
+    display: inline; /* Hiện mũi tên khi hover */ 
+}
+
+/* section eleven: FOOTER */
+footer .container-fluid .content {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .container-fluid .content .inner-left {
+    display: flex;
+    align-items: center;
+}
+
+footer .container-fluid .content .inner-left p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 35px;
+    padding-top: 20px;
+}
+
+
+footer .container-fluid .content .inner-left input {
+    background-color: #fff;
+    border-radius: 20px;
+    width: 400px;
+    height: 40px;
+    padding-left: 10px;
+    border: none;
+    margin-right: 35px;
+}
+
+
+footer .container-fluid .content .inner-left button {
+    border: none;
+    background-color: var(--color-three);
+    color: #fff;
+    width: 150px;
+    height: 40px;
+    font-weight: 500;
+    border-radius: 20px;
+}
+
+footer .container-fluid .content .inner-left button:hover {
+    background-color: #fff;
+    color: var(--color-three);
+    border: 2px solid var(--color-three);
+    font-weight: 800;
+}
+
+footer .container-fluid .content .inner-right {
+    display: flex;
+    align-items: center;
+}
+
+footer .container-fluid .content .inner-right p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 35px;
+    padding-top: 20px;
+}
+
+footer .container-fluid .content .inner-right i {
+    font-size: 35px;
+    margin-right: 10px;
+    opacity: 80%;
+}
+
+footer .container-fluid .content .inner-right i:hover {
+    color: var(--color-three);
+}
+
+footer .box {
+    display: flex;
+    padding: 50px 100px;
+}
+
+footer .box .inner-content {
+    width: 400px;
+    margin-right: 150px ;
+}
+
+footer .box .inner-content:last-child{
+    margin-right: 0;
+}
+
+footer .box .inner-content > p{
+    font-size: 18px;
+    font-weight: 800;
+}
+
+footer .box .inner-content img{
+    width: 180px;
+}
+
+footer .box .inner-content ul li a{
+    color: #000;
+    text-decoration: none;;
+}
+
+footer .box .inner-content ul li a:hover{
+    color: var(--color-two)
+}
+
+footer .box .inner-content iframe{
+    width: 300px;
+    height: 200px;
+}
+
+footer .eire{
+   font-size: 100px;
+   text-align: center;
+   position: relative;
+   top: -100px;
+}
+
+footer .eire .logo1{
+    font-family: var(--fontLogo1);
+    opacity: 80%;
+    color: #5f5f5f;
+}
+
+footer .eire .logo2{
+
+    font-family: var(--fontLogo2);
+    font-size: 200px;
+    letter-spacing: 150px;
+    padding-left: 100px;
+    position: relative;
+    top: -80px;
+}
+
+

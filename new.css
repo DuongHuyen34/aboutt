@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Petrona:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #fff5ef, #ffe2dd);
+    background-size: contain;
+    overflow-x: hidden;
+}
+/* header */
+.section-one {
+    background-color: var(--color-one);
+    height: 119px;
+}
+
+.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.header a {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 119px;
+}
+#cart, #user{
+    color: #656362;
+}
+.header a:hover {
+    background-color: #fff;
+}
+#cart:hover, #user:hover{
+    color: var(--color-three);
+    background-color: transparent;
+
+}
+.header .navbar-logo:hover {
+    background-color: transparent;
+}
+
+/*phan1*/
+.container {
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 150px;
+}
+/*Ảnh*/
+.image-section {
+    flex: 1;
+    position: relative;
+    right: 6%;
+}
+
+.image-background img {
+    width: 560px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+/*phần Text*/
+.text-section {
+    position: relative;
+    text-align: left;
+
+    flex: 0 0 60%;
+    left: 6%;
+}
+.note {
+    font-family: 'Alegreya', serif;
+    font-size: 26px;
+    font-weight: bold;
+    border: 2px solid #000;
+    border-radius: 20px;
+    width: 140px;
+    text-align: center;
+}
+.title {
+    font-family: 'Alegreya', serif;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.description {
+    font-family: 'Alegreya', serif;
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+/*Nút*/
+.cta-button {
+    padding: 10px 20px;
+    font-family: 'Alegreya', serif;
+    font-size: 26px;
+    font-weight: 700;
+    background-color: #b93131;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}  
+.cta-button:hover {
+    background-color: #520000;
+    transform: scale(1.1);
+}
+/**/
+/*phan2*/
+.section-layout {
+    padding: 20px 70px 70px;
+    text-align: left;
+}
+
+.section-title {
+    font-family: 'Alegreya', serif;
+    font-size: 50px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.grid-item {
+    background-color: #fff5ef;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.grid-item img {
+    width: 385px;
+    height: 280px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.grid-item h3 {
+    position: relative;
+    font-family: 'Alegreya', serif;
+    font-size: 26px;
+    font-weight: bold;
+    width: max-content;
+    max-width: 350px;
+}
+
+.grid-item h3::after{
+    content: ""; 
+    position: absolute; 
+    width: 0; 
+    height: 1px;
+    bottom: 0px;  
+    left: 0px; 
+    background: #000; 
+    transition: width 0.3s ease; 
+    -webkit-transition: width 0.3s ease;
+}
+
+.grid-item p {
+    font-family: 'Alegreya', serif;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.grid-item h3:hover::after{
+    width: 100%; 
+}
+/**/
+/* section eleven: FOOTER */
+footer .container-fluid .content {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .container-fluid .content .inner-left {
+    display: flex;
+    align-items: center;
+}
+
+footer .container-fluid .content .inner-left p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 35px;
+    padding-top: 20px;
+}
+
+
+footer .container-fluid .content .inner-left input {
+    background-color: #fff;
+    border-radius: 20px;
+    width: 400px;
+    height: 40px;
+    padding-left: 10px;
+    border: none;
+    margin-right: 35px;
+}
+
+
+footer .container-fluid .content .inner-left button {
+    border: none;
+    background-color: var(--color-three);
+    color: #fff;
+    width: 150px;
+    height: 40px;
+    font-weight: 500;
+    border-radius: 20px;
+}
+
+footer .container-fluid .content .inner-left button:hover {
+    background-color: #fff;
+    color: var(--color-three);
+    border: 2px solid var(--color-three);
+    font-weight: 800;
+}
+
+footer .container-fluid .content .inner-right {
+    display: flex;
+    align-items: center;
+}
+
+footer .container-fluid .content .inner-right p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 35px;
+    padding-top: 20px;
+}
+
+footer .container-fluid .content .inner-right i {
+    font-size: 35px;
+    margin-right: 10px;
+    opacity: 80%;
+}
+
+footer .container-fluid .content .inner-right i:hover {
+    color: var(--color-three);
+}
+
+footer .box {
+    display: flex;
+    padding: 50px 100px;
+}
+
+footer .box .inner-content {
+    width: 400px;
+    margin-right: 150px ;
+}
+
+footer .box .inner-content:last-child{
+    margin-right: 0;
+}
+
+footer .box .inner-content > p{
+    font-size: 18px;
+    font-weight: 800;
+}
+
+footer .box .inner-content img{
+    width: 180px;
+}
+
+footer .box .inner-content ul li a{
+    color: #000;
+    text-decoration: none;;
+}
+
+footer .box .inner-content ul li a:hover{
+    color: var(--color-two)
+}
+
+footer .box .inner-content iframe{
+    width: 300px;
+    height: 200px;
+}
+
+footer .eire{
+   font-size: 100px;
+   text-align: center;
+   position: relative;
+   top: -100px;
+}
+
+footer .eire .logo1{
+    font-family: var(--fontLogo1);
+    opacity: 80%;
+    color: #5f5f5f;
+}
+
+footer .eire .logo2{
+
+    font-family: var(--fontLogo2);
+    font-size: 200px;
+    letter-spacing: 150px;
+    padding-left: 100px;
+    position: relative;
+    top: -80px;
+}
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    section {
+        flex-direction: column;
+    }
+}

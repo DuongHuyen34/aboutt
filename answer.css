@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Petrona:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #fff5ef, #ffe2dd);
+    background-size: contain;
+    overflow-x: hidden;
+}
+/* header */
+.section-one {
+    background-color: var(--color-one);
+    height: 119px;
+}
+
+.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.header a {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 119px;
+}
+#cart, #user{
+    color: #656362;
+}
+.header a:hover {
+    background-color: #fff;
+}
+#cart:hover, #user:hover{
+    color: var(--color-three);
+    background-color: transparent;
+
+}
+.header .navbar-logo:hover {
+    background-color: transparent;
+}
+
+/*phan1*/
+.section {
+    display: flex;
+    font-family: 'Alegreya', serif;
+    font-size: 20px;
+    font-weight: 700;
+    justify-content: space-between;
+}
+.nav {
+    flex: 1;
+    margin-left: 50px;
+    font-family: 'Alegreya', serif;
+    font-size: 36px;
+    font-weight: 100;
+}
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+} 
+  /* Style the content */
+article {
+    flex: 3;
+    padding: 10px;
+}
+
+.faq-question {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px;
+}
+.faq-answer {
+    display: none;
+    max-width: 900px;
+    font-family: 'Bellota Text', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.faq-question svg {
+    font-size: 20px;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+.faq-item {
+    position: relative;
+    left: 10%;
+    margin-bottom: 10px;
+}
+
+.faq-item1 {
+    position: relative;
+    right: 10%;
+    border-bottom: 1px solid #7a7a7a;
+    display: flex;
+    flex-direction: column; /* Đảm bảo câu trả lời nằm dưới câu hỏi */
+}
+
+/* Giao diện của khung form */
+.contact {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+.contact-form {
+    display: flex;
+    background-color: #ffb1a4;
+    border-radius: 15px;
+    padding: 20px 40px;
+    width: 1400px;
+    height: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-header-row {
+    display: flex;
+    align-items: center;
+}
+
+/* Tiêu đề */
+.form-header-row h2 {
+    font-family: 'Alegreya', serif;
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    flex: 1; /* Tiêu đề chiếm kích thước nội dung của nó */
+    margin: 0; /* Xóa margin mặc định */
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 200px;
+    flex: 3;
+}
+/* Các ô input và textarea */
+.form-group {
+    flex: 1;
+    display: flex;
+    margin-top: 45px;
+    flex-direction: column;
+}
+
+label {
+    font-family: 'Bellota Text', sans-serif;
+    font-size: 20px; 
+    margin-bottom: 2px;
+    color: #333;
+}
+
+input, textarea {
+    border: none;
+    border-bottom: 1px solid #333;
+    padding: 6px;
+    background: none;
+    outline: none;
+    transition: border-bottom-color 0.3s;
+    width: 100%;
+}
+
+input:focus, textarea:focus {
+    border-bottom-color: #e74c3c;
+}
+
+/* Textarea full-width */
+.form-group.full-width {
+    width: 100%;
+}
+
+/* Nút gửi */
+.submit-btn {
+    background-color: #b93131;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-family: 'Alegreya', serif;
+    font-size: 26px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    float: right;
+    margin-top: 30px;
+}
+
+.submit-btn:hover {
+    background-color: #3d0600;
+}
+
+/* Textarea full-width */
+.form-group.full-width {
+    width: 100%;
+}
+
+/* Nút gửi */
+.submit-btn {
+    background-color: #b93131;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-family: 'Alegreya', serif;
+    font-size: 26px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    float: right;
+    margin-top: 20px;
+}
+
+.submit-btn:hover {
+    background-color: #3d0600;
+}
+
+/* section eleven: FOOTER */
+footer .container-fluid .content {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .container-fluid .content .inner-left {
+    display: flex;
+    align-items: center;
+}
+
+footer .container-fluid .content .inner-left p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 35px;
+    padding-top: 20px;
+}
+
+
+footer .container-fluid .content .inner-left input {
+    background-color: #fff;
+    border-radius: 20px;
+    width: 400px;
+    height: 40px;
+    padding-left: 10px;
+    border: none;
+    margin-right: 35px;
+}
+
+
+footer .container-fluid .content .inner-left button {
+    border: none;
+    background-color: var(--color-three);
+    color: #fff;
+    width: 150px;
+    height: 40px;
+    font-weight: 500;
+    border-radius: 20px;
+}
+
+footer .container-fluid .content .inner-left button:hover {
+    background-color: #fff;
+    color: var(--color-three);
+    border: 2px solid var(--color-three);
+    font-weight: 800;
+}
+
+footer .container-fluid .content .inner-right {
+    display: flex;
+    align-items: center;
+}
+
+footer .container-fluid .content .inner-right p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 35px;
+    padding-top: 20px;
+}
+
+footer .container-fluid .content .inner-right i {
+    font-size: 35px;
+    margin-right: 10px;
+    opacity: 80%;
+}
+
+footer .container-fluid .content .inner-right i:hover {
+    color: var(--color-three);
+}
+
+footer .box {
+    display: flex;
+    padding: 50px 100px;
+}
+
+footer .box .inner-content {
+    width: 400px;
+    margin-right: 150px ;
+}
+
+footer .box .inner-content:last-child{
+    margin-right: 0;
+}
+
+footer .box .inner-content > p{
+    font-size: 18px;
+    font-weight: 800;
+}
+
+footer .box .inner-content img{
+    width: 180px;
+}
+
+footer .box .inner-content ul li a{
+    color: #000;
+    text-decoration: none;;
+}
+
+footer .box .inner-content ul li a:hover{
+    color: var(--color-two)
+}
+
+footer .box .inner-content iframe{
+    width: 300px;
+    height: 200px;
+}
+
+footer .eire{
+   font-size: 100px;
+   text-align: center;
+   position: relative;
+   top: -100px;
+}
+
+footer .eire .logo1{
+    font-family: var(--fontLogo1);
+    opacity: 80%;
+    color: #5f5f5f;
+}
+
+footer .eire .logo2{
+
+    font-family: var(--fontLogo2);
+    font-size: 200px;
+    letter-spacing: 150px;
+    padding-left: 100px;
+    position: relative;
+    top: -80px;
+}
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    section {
+        flex-direction: column;
+    }
+}
